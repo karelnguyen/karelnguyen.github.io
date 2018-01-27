@@ -1,0 +1,137 @@
+
+body {
+  margin: 0px;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+}
+
+.my-name {
+  position: fixed;
+  font-size: 26px;
+  margin-top: 50px;
+  margin-left: 30px;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: bold;
+  color: #3a3a3a;
+  z-index: 9000;
+}
+
+.content-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-bc-color {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  opacity: 1;
+}
+
+.content-bc {
+  font-size: 33px;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  opacity: 0.3;
+  background-image: url('../img/hero-bc.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-text {
+  position: absolute;
+  color: #f2f2f2;
+  width: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+}
+
+.c-text1 {
+  font-size: 40px;
+  width: 50%;
+  text-align: right;
+  border-right: 2px solid #f2f2f2;
+  padding-right: 30px;
+  margin-right: 30px;
+}
+
+.c-text2 {
+  width: 50%;
+  padding-top: 69px;
+  padding-right: 100px;
+}
+
+/*----------------------------------------*/
+
+.about-me {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.about-title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 53px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-p {
+  font-family: 'Inconsolata', sans-serif;
+  text-align: center;
+  font-size: 23px;
+  width: 700px;
+  margin: auto;
+}
+
+.parallax-color2 {
+  background-color: #e2e2e2;
+  height: 600px;
+}
+
+.parallax {
+  width: 100%;
+  background-image: url('../img/coffee.jpg');
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-bc {
+  width: 700px;
+  height: 200px;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.s-title {
+  color: #f2f2f2;
+  font-size: 53px;
+  z-index: 3;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  border-bottom: 3px solid #db2b37;
+}
