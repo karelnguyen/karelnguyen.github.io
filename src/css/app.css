@@ -1,0 +1,234 @@
+body {
+  margin: 0px; }
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #F2f2f2;
+  display: flex;
+  align-items: center; }
+  #particles-js .content-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    #particles-js .content-wrapper .content-bc-color {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 1; }
+    #particles-js .content-wrapper .content-bc {
+      font-size: 33px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background-image: url("../img/hero-bc.jpg");
+      background-size: cover;
+      background-attachment: fixed; }
+    #particles-js .content-wrapper .content-text {
+      position: absolute;
+      color: #F2f2f2;
+      width: 100%;
+      font-family: "Titillium Web", sans-serif;
+      display: flex; }
+      #particles-js .content-wrapper .content-text .c-text1 {
+        width: 50%;
+        padding-right: 10px; }
+        #particles-js .content-wrapper .content-text .c-text1 .c-text1-1 {
+          font-size: 67px;
+          text-align: right;
+          font-weight: 700;
+          color: #db2b37; }
+        #particles-js .content-wrapper .content-text .c-text1 .c-text1-2 {
+          font-size: 27px;
+          text-align: right;
+          font-weight: 300;
+          padding-left: 30px;
+          font-family: "Inconsolata", sans-serif; }
+      #particles-js .content-wrapper .content-text .c-text2-wrapper {
+        width: 50%;
+        padding-right: 100px;
+        padding-top: 30px;
+        padding-left: 10px; }
+        #particles-js .content-wrapper .content-text .c-text2-wrapper .c-text2 {
+          margin-bottom: 70px; }
+        #particles-js .content-wrapper .content-text .c-text2-wrapper a {
+          border: 1px solid #db2b37;
+          border-radius: 20px;
+          padding-right: 26px;
+          padding-left: 20px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          text-decoration: none;
+          color: #F2f2f2;
+          font-family: "Inconsolata", sans-serif; }
+          #particles-js .content-wrapper .content-text .c-text2-wrapper a img {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px; }
+
+.about-me {
+  height: 100vh;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #F2f2f2;
+  width: 100%; }
+  .about-me .about-title {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 53px;
+    font-weight: 700;
+    text-align: center; }
+  .about-me .about-p {
+    font-family: "Inconsolata", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    width: 700px;
+    margin: auto; }
+
+.parallax {
+  width: 100%;
+  background-image: url("../img/coffee.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .parallax .s-bc {
+    width: 700px;
+    height: 200px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute; }
+  .parallax .s-title {
+    color: #F2f2f2;
+    font-size: 53px;
+    z-index: 3;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    border-bottom: 3px solid #db2b37; }
+
+.parallax-color2 {
+  background-color: #F2f2f2;
+  height: 600px; }
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #3a3a3a;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*
+   * Emphatic
+   */
+.hamburger--emphatic {
+  overflow: hidden; }
+  .hamburger--emphatic .hamburger-inner {
+    transition: background-color 0.125s 0.175s ease-in; }
+    .hamburger--emphatic .hamburger-inner::before {
+      left: 0;
+      transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
+    .hamburger--emphatic .hamburger-inner::after {
+      top: 10px;
+      right: 0;
+      transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
+  .hamburger--emphatic.is-active .hamburger-inner {
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    background-color: transparent; }
+    .hamburger--emphatic.is-active .hamburger-inner::before {
+      left: -80px;
+      top: -80px;
+      transform: translate3d(80px, 80px, 0) rotate(45deg);
+      transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .hamburger--emphatic.is-active .hamburger-inner::after {
+      right: -80px;
+      top: -80px;
+      transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+      transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  z-index: 9000;
+  width: 100%;
+  transition-duration: 0.4s; }
+  navbar a {
+    text-decoration: none;
+    font-size: 26px;
+    font-family: "Inconsolata", sans-serif;
+    font-weight: bold;
+    color: #3a3a3a;
+    z-index: 9000;
+    cursor: pointer; }
+  navbar a:hover {
+    border: none;
+    opacity: 0.7;
+    text-decoration: none;
+    color: #3a3a3a;
+    transition-duration: 0.15s; }
+  navbar .b-line {
+    width: 1px;
+    height: 50px;
+    background-color: #3a3a3a;
+    margin-left: 10px;
+    margin-right: 20px; }
+  navbar button:focus {
+    outline: none; }
+  navbar .hamburger {
+    margin-left: 20px;
+    margin-top: 5px; }

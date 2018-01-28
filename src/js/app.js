@@ -3,28 +3,38 @@ particlesJS.load('particles-js', '/src/js/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
+function hambClick() {
+  const hambBtn = document.getElementById('hamb-btn');
+  hambBtn.classList.toggle("is-active");
+};
+
 window.onscroll = function() {
-  const myName = document.getElementById('my-name');
+  const navbar = document.getElementById('navbar');
   const scrollNum = window.pageYOffset;
-  console.log(scrollNum);
 
-  if (scrollNum < 84) {
-    myName.style.color = '#3a3a3a';
+  if (scrollNum < 30) {
+   navbar.style.background = 'transparent';
   }
 
-  if (scrollNum > 84) {
-    myName.style.color = '#f2f2f2';
+  if (scrollNum > 30) {
+    navbar.style.backgroundColor = '#f2f2f2';
   }
+};
 
-  if (scrollNum > 385) {
-    myName.style.color = '#3a3a3a';
-  }
+//TypeIt library for text type animation
+new TypeIt('#hello', {
+     strings: ['hello','hallo','你好','ahoj','salut','hola','ciao','привет','もしもし'],
+     speed: 150,
+     breakLines: false,
+     autoStart: false,
+     cursor: true,
+     loop: true
+});
 
-  if (scrollNum > 1141) {
-    myName.style.color = '#f2f2f2';
-  }
-
-  if (scrollNum > 1384) {
-    myName.style.color = '#3a3a3a';
-  }
-}
+//scrollreveal
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.c-text1-2');
+sr.reveal('.c-text2-wrapper');
+sr.reveal('.about-title');
+sr.reveal('.about-p');
+sr.reveal('.s-title');

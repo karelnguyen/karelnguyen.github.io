@@ -1,0 +1,57 @@
+.about-me {
+  height: 100vh;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: $light-white;
+  width: 100%;
+
+  .about-title {
+    font-family: $title-font;
+    font-size: 53px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .about-p {
+    font-family: $main-font;
+    text-align: center;
+    font-size: 23px;
+    width: 700px;
+    margin: auto;
+  }
+}
+
+.parallax {
+  width: 100%;
+  background-image: url('../img/coffee.jpg');
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .s-bc {
+    width: 700px;
+    height: 200px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+  }
+
+  .s-title {
+    color: $light-white;
+    font-size: 53px;
+    z-index: 3;
+    font-family: $title-font;
+    font-weight: 700;
+    border-bottom: 3px solid $red;
+  }
+}
+
+.parallax-color2 {
+  background-color: $light-white;
+  height: 600px;
+}
