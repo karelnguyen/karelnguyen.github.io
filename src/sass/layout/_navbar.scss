@@ -2,10 +2,21 @@ navbar {
   position: fixed;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 90px;
   z-index: 9000;
   width: 100%;
   transition-duration: 0.4s;
+  @include breakpoint(mobile) {
+    height: 70px;
+  };
+
+  .navbar-bc {
+    position: fixed;
+    z-index: 8999;
+    height: 90px;
+    width: 100%;
+    opacity: 0.9;
+  }
 
   a {
     text-decoration: none;
@@ -31,6 +42,7 @@ navbar {
     background-color: $grey;
     margin-left: 10px;
     margin-right: 20px;
+    z-index: 9000;
   }
 
   button:focus {
@@ -40,5 +52,6 @@ navbar {
   .hamburger {
     margin-left: 20px;
     margin-top: 5px;
+    z-index: 9000;
   }
 }

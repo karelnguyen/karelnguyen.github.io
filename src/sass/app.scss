@@ -1,5 +1,8 @@
 @import "modules/variables";
+@import "modules/mixins";
+@import "layout/navbar";
 @import "layout/hero";
 @import "layout/about";
+@import "layout/footer";
+@import "layout/menu";
 @import "vendor/hamburgers/hamburgers";
-@import "layout/navbar";

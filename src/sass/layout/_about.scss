@@ -1,9 +1,14 @@
 .about-me {
-  height: 100vh;
+  height: 700px;
   padding-top: 160px;
   padding-bottom: 160px;
-  background-color: $light-white;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $light-white;  /* fallback for old browsers */
+  background: -webkit-linear-gradient($light-white, $light-grey);  /* Chrome 10-25, Safari 5.1-6 (#1CB5E0, #000046)*/
+  background: linear-gradient($light-white, $light-grey); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   .about-title {
     font-family: $title-font;
@@ -16,14 +21,19 @@
     font-family: $main-font;
     text-align: center;
     font-size: 23px;
-    width: 700px;
+    max-width: 700px;
     margin: auto;
+    @include breakpoint(mobile) {
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 40px;
+    };
   }
 }
 
 .parallax {
   width: 100%;
-  background-image: url('../img/coffee.jpg');
+  background-image: url('../img/hero-bc.jpg');
   height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -32,9 +42,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
 
   .s-bc {
-    width: 700px;
+    width: 100%;
     height: 200px;
     background-color: black;
     opacity: 0.5;
@@ -48,10 +59,41 @@
     font-family: $title-font;
     font-weight: 700;
     border-bottom: 3px solid $red;
+    text-align: center;
+    margin: 30px;
   }
 }
 
 .parallax-color2 {
-  background-color: $light-white;
-  height: 600px;
+  background: $light-grey;  /* fallback for old browsers */
+  background: -webkit-linear-gradient($light-grey, $dark-blue);  /* Chrome 10-25, Safari 5.1-6 (#1CB5E0, #000046)*/
+  background: linear-gradient($light-grey, $dark-blue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
+  .col-sm {
+    text-align: center;
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin: 30px;
+      opacity: 0.8;
+      cursor: pointer;
+      transition-duration: 1s;
+    }
+
+    img:hover {
+      transform: rotate(12deg);
+    }
+
+    .react {
+      width: 80px;
+      height: 80px;
+      background-size: contain;
+    }
+  }
 }
