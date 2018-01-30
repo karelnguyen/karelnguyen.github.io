@@ -12,13 +12,15 @@ function hasClass(element, cls) {
 function hambClick() {
   let hambBtn = document.getElementById('hamb-btn');
   let menu = document.getElementById('menu');
-
+  let bodyScroll = document.querySelector('body');
   hambBtn.classList.toggle("is-active");
 
   if (hasClass(hambBtn, 'is-active') === true) {
-    menu.style.display = 'block';
+    menu.style.display = 'flex';
+    bodyScroll.style.overflow = 'hidden';
   } else {
     menu.style.display = 'none';
+    bodyScroll.style.overflow = 'auto';
   }
 };
 
@@ -27,6 +29,9 @@ function closeMenu() {
   let menu = document.getElementById('menu');
   menu.style.display = 'none';
   hambBtn.classList.toggle("is-active");
+  let bodyScroll = document.querySelector('body');
+  bodyScroll.style.overflow = 'auto';
+
 }
 
 window.onscroll = function() {
@@ -61,4 +66,3 @@ sr.reveal('.about-p');
 sr.reveal('.s-title');
 sr.reveal('.row');
 sr.reveal('.footer-content');
-sr.reveal('#menu');
