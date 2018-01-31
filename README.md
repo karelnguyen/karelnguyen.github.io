@@ -1,7 +1,11 @@
 # karelnguyen.github.io
-
 ## My personal site
 
-here you can find more about me.
+**To acces my website, please click here: https://karelnguyen.github.io/
+
+
+here you can find more informations about me.
+
+
 
 
