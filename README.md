@@ -4,7 +4,7 @@
 **To acces my website, please click here: https://karelnguyen.github.io/**
 
 
-here you can find more informations about me.
+here you can find more information about me.
 
 
 
